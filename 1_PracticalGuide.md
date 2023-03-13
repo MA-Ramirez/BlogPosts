@@ -2,7 +2,7 @@
 
 ## Introduction
 When I first got interested in Julia, I was very much looking forward to contribute to open-source projects. 
-However, I came to realise that I had no clue how to do this. I asked for advice, and I was told to just create a "PR". As you can imagine, this is more complex than it sounds.
+However, I came to realise that I had no clue how to do this (in practical terms). I asked for advice, and I was told to just create a "PR". As you can imagine, this is more complex than it sounds.
 
 After I learnt the general concepts behind [How to contribute to open source](https://opensource.guide/how-to-contribute/), I was still confused about the steps to take before making such a "Pull Request".
 
@@ -47,11 +47,11 @@ _Note: always do this to run the dev version of the package_
 
 Just click the `Fork` button in the GitHub website of the original repo.
 
-**2.2 Go to the folder where the package is located for development**
+**2.2 Go to the folder (in my computer) where the package is located for development**
 
 `~/.julia/dev/PackageName`
 
-_Tip: use `Command+Shift+Dot` in mac to show hidden files (e.g. to view then in Finder)_
+_Tip: use `Cmd+Shift+.` in mac to show hidden files (e.g. to view then in Finder)_
 
 **2.3 Connect the local folder to your fork**
 
@@ -67,11 +67,11 @@ _Note: `set-url` modifies an origin/upstream that already exists, `add` creates 
 
 **3.1 Open project in VSCode**
 
-_Tip: use `Command+Shift+Dot` in mac to show hidden files (to view then in Finder)_
+_Tip: use `Cmd+Shift+.` in mac to show hidden files (to view then in Finder)_
 
 **3.2 Open a Julia console associated with the project**
 
-Type `alt+J+O` in mac
+`alt+J+O` in mac
 
 **3.3 Activate Revise.jl**
 
