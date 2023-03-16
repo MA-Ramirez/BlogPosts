@@ -52,7 +52,7 @@ Hacer click en el botón `Fork` en la página web en GitHub del repo original.
 
 `~/.julia/dev/NombrePaquete`
 
-_Tip: usar `Cmd+Shift+.` en mac para mostrar documentos escondidos (e.g. para visualizarlos en Finder)_
+_Tip: usar `Cmd+Shift+.` en mac para mostrar documentos ocultos (e.g. para visualizarlos en Finder)_
 
 **2.3 Conectar mi carpeta local al fork**
 
@@ -68,7 +68,7 @@ _Nota: `set-url` modifica origin/upstream ya existentes, `add` crea una nueva co
 
 **3.1 Abrir el proyecto en VSCode**
 
-_Tip: usar `Cmd+Shift+.` en mac para mostrar documentos escondidos (e.g. para visualizarlos en Finder)_
+_Tip: usar `Cmd+Shift+.` en mac para mostrar documentos ocultos (e.g. para visualizarlos en Finder)_
 
 **3.2 Abrir la consola de Julia asociada al proyecto**
 
