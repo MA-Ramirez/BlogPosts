@@ -29,9 +29,11 @@ This will allow for your version of the code to run separately from the register
 
 * **Switch to the registered version** 
 
-In the Julia Pkg REPL `add <PackageName>`
+In the Julia Pkg REPL `add <PackageName>` or `free <PackageName>`
 
 `st` --> `<PackageName> <version>`
+
+_Note: `free` is used in general to un-pinning packages. Pinning a package means fixing its version in place, for example such that it can't be upgraded. `free` will throw an error if the package is not set to dev mode, or if it is not pinned._
   
 * **Switch to the developer's version**
   
@@ -86,6 +88,10 @@ In the Julia REPL:
 
 _Tip: to find a function in the project type `edit(<function_name>)`_ 
 
+_Note: to avoid having to write `using Revise`, or any other instruction every time you open your Julia console, you can set up a `startup.jl` file._
+_This file is created in `~/.julia/config/startup.jl` and it runs every time you open your Julia console._
+_In the file you just write `using Revise`. You can also add any other instructions that you want._
+
 ## 4. Create a new branch
 
 To create and switch to the new branch `git checkout -b <branch-name>`
@@ -97,7 +103,7 @@ To view branches `git branch`
 _Note: always be aware of the branch you are working on_
 
 ## 5. Code
-Code your contribution
+Code your contribution and add its corresponding documentation
 
 ## 6. Test code
 It is a good practice to test your code.
@@ -118,6 +124,9 @@ Push the new contribution to my GitHub (fork of the original repo) on the newly 
 ## 8. Open a Pull Request (PR) on the original repo
 This is done on the GitHub website of the original repo. Typically, a `Compare and pull request` button appears automatically to perform this process.
 
+## 9. Learn from reviewers' comments
+Once you create a PR, other people will check your contribution and review it. For your contribution to be approved typically you must take into account the reviewers' comments (this is a great opportunity to learn more about coding by interacting with more experienced people). Make the suggested changes in the corresponding branch and `push` them.
+
 ## Contribution approved ✅ 🎉
 
 * If your contribution has been approved, describe it in the [`changelog.md` file](https://keepachangelog.com/en/1.0.0/).
@@ -127,8 +136,7 @@ This is a file that contains text, not code, with "an ordered list of notable ch
 
 * Once your contribution has been merged, you can safely delete your branch if you don't want to continue development within it
 
-
+---------
 For additional practical information, you can check out this [video](https://www.youtube.com/watch?v=QVmU29rCjaA).
-
 
 Feel free to create an issue to share any questions or suggestions :)
