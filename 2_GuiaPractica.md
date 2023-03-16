@@ -30,9 +30,11 @@ Esto permitirá que tu versión del código corra de manera independiente al paq
 
 * **Cambiar a la versión registrada** 
 
-En el Julia Pkg REPL `add <NombrePaquete>`
+En el Julia Pkg REPL `add <NombrePaquete>` o `free <PackageName>`
 
 `st` --> `<NombrePaquete> <version>`
+
+_Nota: `free` en general se emplea para desanclar un paquete. Anclar un paquete significa fijar su versión, por ejemplo al anclar un paquete este no se puede actualizar. `free` arrojará un error si el paquete no está en modo desarrollador, o si su versión no se ha fijado._
   
 * **Cambiar a la versión en desarrollo**
   
@@ -87,6 +89,8 @@ En el Julia REPL:
 
 _Tip: para encontrar una función en el proyecto escribir `edit(<nombre-funcion>)`_ 
 
+_Nota: para evitar el tedio de escribir `using Revise`, o cualquier otra instrucción cada vez al abrir la consola de Julia, puedes configurar un archivo `startup.jl`. Este es un archivo creado en `~/.julia/config/startup.jl` que corre cada vez que se abre la consola de Julia. En el archivo solo debes escribir `using Revise`. Puedes también agregar cualquier otra instrucción que desees._
+
 ## 4. Crear una branch nueva
 
 Crear y cambiarse a la nueva branch `git checkout -b <nombre-branch>`
@@ -98,7 +102,7 @@ Visualizar branches disponibles `git branch`
 _Nota: siempre tener cuidado con la branch en la que estás trabajando_
 
 ## 5. Escribir tu código
-Escribe el código de tu contribución
+Escribe el código de tu contribución y su correspondiente documentación.
 
 ## 6. Prueba tu código
 Es una buena prácticar crear tests para verificar que el nuevo código funciona correctamente
@@ -119,6 +123,9 @@ Genera un push de tu contribución a tu GitHub (fork del repo original) en la br
 ## 8. Abrir un Pull Request (PR) en el repo original
 Esto se realiza en la página web en GitHub del repo original. Normalmente, el botón `Compare and pull request` aparece automáticamente para realizar este proceso.
 
+## 9. Aprender de la retroalimentación
+Una vez hayas creado un PR, otras personas revisarán tu código y te darán retroalimentación. Para que tu contribución sea aprobada, normalmente debes incorporar los comentarios de la retroalimentación (esta es una gran oportunidad para interactuar con personas más experimentadas y aprender sobre programación). Incluye los cambios sugeridos en la branch correspondiente y genera un `push`.
+
 ## Contribución aprobada ✅ 🎉
 
 * Si tu contribución fue aprobada, descríbela en el [documento `changelog.md`](https://keepachangelog.com/en/1.0.0/).
@@ -127,6 +134,8 @@ Este es un documento que contiene texto, no código, con una lista ordenada de l
 * Si tu contribución: añade una nueva función, o cambia el nombre de una función existente, añadela al documento `api.md`
 
 * Una vez tu contribución se ha fusionado al repo original, puedes borrar tu branch si no quieres continuar desarrollando dentro de esta
+
+---------------
 
 Para información práctica adicional, ver este video [video](https://www.youtube.com/watch?v=QVmU29rCjaA).
 
